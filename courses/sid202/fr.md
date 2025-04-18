@@ -1,5 +1,5 @@
 ---
-name: Construire avec les éléments et le réseau liquide
+name: Construire avec Elements et le Liquid Network
 goal: Apprendre à utiliser et à développer avec la plateforme blockchain open-source Elements et ses principales caractéristiques
 objectives: 
 
@@ -9,7 +9,7 @@ objectives:
   - Mettre en place et gérer des environnements blockchain sécurisés et efficaces pour des cas d'utilisation réels.
 
 ---
-# S'appuyer sur les liquides et les éléments
+# Développer sur Liquid et Elements
 
 Découvrez les fonctionnalités avancées de Liquid et d'Elements, et apprenez à utiliser efficacement ces outils pour améliorer vos projets de développement. Cette formation fournit une base théorique et pratique complète, vous permettant de maîtriser des fonctionnalités telles que les transactions confidentielles, les actifs émis et la signature de blocs fédérés.
 
@@ -76,9 +76,9 @@ Par défaut, toutes les adresses d'Elements sont masquées à l'aide des transac
 
 #### Actifs émis
 
-Les actifs émis sur les éléments permettent d'émettre et de transférer plusieurs types d'actifs entre les participants au réseau. Un actif émis bénéficie également de transactions confidentielles et peut être réémis ou détruit par toute personne détenant le jeton de réémission correspondant.
+Les actifs émis sur Elements permettent d'émettre et de transférer plusieurs types d'actifs entre les participants au réseau. Un actif émis bénéficie également de transactions confidentielles et peut être réémis ou détruit par toute personne détenant le jeton de réémission correspondant.
 
-#### Piquet à 2 voies fédéré
+#### Ancrage à 2 voies fédéré
 
 Elements est une plateforme blockchain à usage général qui peut également être "rattachée" à une blockchain existante (telle que Bitcoin) afin de permettre le transfert bidirectionnel d'actifs d'une chaîne à l'autre. La mise en œuvre d'Elements en tant que sidechain vous permet de contourner certaines des propriétés inhérentes à la chaîne principale, tout en conservant un bon niveau de sécurité fourni par les actifs sécurisés sur la chaîne principale.
 
@@ -102,13 +102,13 @@ Elements apporte une solution technique aux problèmes auxquels les utilisateurs
 
 Elements surmonte ces problèmes grâce à l'utilisation de la signature par blocs fédérés et des transactions confidentielles.
 
-Contrairement au réseau Bitcoin, le processus de signature des blocs au sein d'Elements ne repose pas sur les signatures multipartites à adhésion dynamique (DMMS) et la preuve de travail (PoW). Au lieu de cela, Elements utilise une Fédération forte de signataires, appelés signataires de blocs, qui peuvent signer et créer des blocs de manière fiable et opportune. Cela permet d'éliminer la latence de transaction du processus d'extraction de la preuve de travail, qui est sujet à une grande variance de temps de bloc en raison de sa distribution aléatoire de poisson. Le processus de signature de blocs fédérés permet de créer des blocs fiables sans qu'il soit nécessaire de faire confiance à une tierce partie.
+Contrairement au réseau Bitcoin, le processus de signature des blocs au sein d'Elements ne repose pas sur les signatures multipartites à adhésion dynamique (DMMS) et la preuve de travail (PoW). Au lieu de cela, Elements utilise une Fédération forte de signataires, appelés signataires de blocs, qui peuvent signer et créer des blocs de manière fiable et opportune. Cela permet d'éliminer la latence de transaction du processus d'extraction de la preuve de travail, qui est sujet à une grande variance de temps de bloc en raison d'une variable aléatoire suivant une loi de Poisson. Le processus de signature de blocs fédérés permet de créer des blocs fiables sans qu'il soit nécessaire de faire confiance à une tierce partie.
 
 Elements peut fonctionner en tant que sidechain d'une autre blockchain, telle que Bitcoin, ou en tant que blockchain autonome ne dépendant pas d'autres réseaux.
 
 Lorsqu'elle est utilisée comme sidechain, la Strong Federation contient également des membres qui permettent le transfert sécurisé et contrôlé d'actifs entre une chaîne principale et une sidechain Elements. Le transfert contrôlé d'actifs est appelé Federated 2-Way Peg et les membres qui jouent le rôle de transfert d'actifs sont appelés Watchmen.
 
-Les processus impliqués dans le fonctionnement d'un réseau Éléments et les rôles des participants au réseau sont importants pour comprendre le fonctionnement d'Éléments.
+Les processus impliqués dans le fonctionnement d'un réseau Éléments et les rôles des participants au réseau sont importants pour comprendre le fonctionnement d'Elements.
 
 Qu'il soit implémenté en tant que sidechain ou blockchain autonome, Elements utilise des fédérations fortes de signataires de blocs pour produire des blocs.
 
@@ -116,7 +116,7 @@ Qu'il soit implémenté en tant que sidechain ou blockchain autonome, Elements u
 
 Elements utilise un modèle de consensus proposé pour la première fois par Blockstream, appelé Strong Federations. Une fédération forte n'a pas besoin de preuve de travail (PoW) et s'appuie plutôt sur les actions collectives d'un groupe de participants qui se méfient les uns des autres, appelés fonctionnaires.
 
-Les rôles qu'un fonctionnaire peut remplir au sein d'une Fédération forte sont les suivants : Les signataires de blocs et les gardiens. Les signataires de blocs sont nécessaires si vous exécutez les éléments en mode sidechain ou blockchain autonome, tandis que les gardiens ne sont nécessaires que dans une configuration sidechain.
+Les rôles qu'un fonctionnaire peut remplir au sein d'une Fédération forte sont les suivants : Les signataires de blocs et les gardiens. Les signataires de blocs sont nécessaires si vous exécutez Elements en mode sidechain ou blockchain autonome, tandis que les gardiens ne sont nécessaires que dans une configuration sidechain.
 
 Les actions qu'un membre d'une fédération forte peut effectuer sont réparties entre deux rôles distincts afin de renforcer la sécurité et de limiter les dommages qu'un attaquant peut causer.
 
@@ -141,7 +141,7 @@ La signature fédérée de blocs se compose de plusieurs phases :
 
 Étant donné que la génération de blocs d'une fédération forte n'est pas probabiliste et qu'elle est basée sur un ensemble fixe de signataires, elle ne sera jamais sujette à des réorganisations multi-blocs. Cela permet de réduire considérablement le temps d'attente associé à la confirmation des transactions. Il supprime également l'incitation à miner pour le profit (c'est-à-dire les récompenses de bloc) et la remplace par une incitation à participer de manière productive à un réseau où tous les participants ont le même objectif commun : veiller à ce que le réseau continue à fonctionner d'une manière qui soit bénéfique pour tous. Cela se fait sans introduire de point de défaillance unique ni d'exigences plus élevées en matière de confiance.
 
-### Elements as a Sidechain - Watchmen et le Peg à deux voies fédéré
+### Elements en tant que Sidechain - Watchmen et le Federated 2-Way Peg
 
 Lorsqu'ils sont gérés comme une sidechain, certains membres de la Strong Federation ont un rôle supplémentaire à remplir, celui des Watchmen. Les Watchmen sont responsables du transfert des actifs dans et hors d'une Elements sidechain, processus connus sous le nom de `Peg-In` et `Peg-Out`.
 
